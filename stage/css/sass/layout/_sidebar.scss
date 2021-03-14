@@ -1,0 +1,165 @@
+ .nav{
+   
+     @media(max-width:990px)
+     {
+         .list ul li {
+             display: none !important;
+         }
+         .hid{
+              display: block !important;
+             position: fixed!important;
+
+         }
+     }
+     background-color: #000;
+     padding: 10px;
+     .logo{
+        font-size: 18px;
+        font-weight: bold;
+         a{
+             margin: 10px;
+             padding-top: 10px;
+         }
+
+     }
+     .list{
+      
+         ul{
+             color: #fff;
+             white-space: nowrap;
+             font-size: 18px;
+             font-weight: bold;
+             
+             li{
+                 display:inline-block;
+                 a{
+                     
+                     margin: 10px;
+                     margin-top: 10px;
+                 }
+
+             }
+            
+             position: relative;
+         }
+      
+         .hid{
+          
+            position: absolute;
+            top: 15px;
+            color: #fff;
+            right: 10px;
+            font-size: 30px;
+            display: none;
+           color: #c79c60;
+
+            @media(max-width:990px)
+            {
+             display: block !important;
+             position: fixed !important;
+             background-color: rgba(0,0,0,0.6);
+             padding: 15px;
+             color: #c79c60;
+            }
+
+
+        }
+
+     }
+ }
+ .header{
+     
+     background-color: #282726;
+     
+     padding-bottom: 20px;
+     .imageall{
+         display: flex;
+         justify-content: space-between;
+         @media (max-width:768px) {
+          justify-content: center;
+        }
+        
+       
+        
+     }
+     
+         .im1{
+             @media (max-width:768px) {
+                 display: none;
+                 
+             }
+         }
+         .im{
+            @media (max-width:768px) {
+               vertical-align: middle;
+               justify-content: center;
+
+              
+               
+                
+            }
+        }
+       
+   
+     .container{
+     .welcom{
+         color: #fff;
+         margin-top:-70px;
+         padding-bottom: 250px;
+         h2{
+             font-size: 50px;
+         }
+         p{
+             text-align: justify;
+             color: #949494;
+             
+             display: block;
+             margin: 0 10px;
+
+             span{
+                 color: #c79c60;
+             }
+             
+         }
+         .oo{
+            background-image: url('../imgs/tm-brown-button.png');
+            font-size: 20px;
+            margin-top: -80px;
+            
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            display: flex;
+            padding: 10px;
+            
+            
+            width: 300px;
+            height: 200px;
+           justify-content: center;
+            text-align: center;
+            padding-bottom: 150px;
+            .ooo{
+                margin-right:100px ;
+                padding-bottom: 10px;
+                
+            }
+         }
+         .mktb{
+             text-align: justify;
+             margin-top: -150px;
+             position: absolute;
+             bottom: -140px;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+             
+         }
+         .img-responsive{
+            display: block;
+            max-width: 100%;
+            height: auto;
+         }
+     }
+     position: relative;
+    }
+ }

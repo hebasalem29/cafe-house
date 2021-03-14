@@ -17,12 +17,10 @@ gulp.task('html',function()
 });
 gulp.task('css',function()
 {
-    return gulp.src(['stage/css/**/*.css/','stage/css/**/*.scss'])
+    return gulp.src(['stage/css/**/*.css','stage/css/**/*.scss'])
     .pipe(sorcemaps.init())
     .pipe(sass({outputstyle:'compressed'}))
     .pipe(autoprefixer())
-    
-
     .pipe(concat('main.css'))
     .pipe(gulp.dest('dist/css'))
     .pipe(livereload());
@@ -40,6 +38,6 @@ gulp.task('js',function(){
 gulp.task('watch',function(){
     livereload.listen();
     gulp.watch('stage/html/**/*.pug',gulp.series('html'));
-    gulp.watch(["stage/css/**/*.css","stage/css/**/*.scss"],gulp.series('css'));
+    gulp.watch(['stage/css/**/*.css','stage/css/**/*.scss'],gulp.series('css'));
     gulp.watch('stage/js/*.js',gulp.series('js'));
 })
