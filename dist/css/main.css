@@ -9297,3 +9297,30 @@ a {
         display: block;
         max-width: 100%;
         height: auto; }
+
+.menu {
+  background-color: #e4e4e4;
+  padding-top: 150px; }
+  .menu .cofee {
+    padding-right: 50px; }
+    .menu .cofee h2 {
+      color: #c79c60; }
+    .menu .cofee p {
+      text-align: justify; }
+      .menu .cofee p .s1 {
+        color: #0066CC; }
+      .menu .cofee p .s2 {
+        color: #30A430; }
+    .menu .cofee .ab {
+      background-image: url("../imgs/tm-brown-button.png");
+      background-repeat: no-repeat;
+      display: flex;
+      font-size: 20px;
+      padding: 5px;
+      text-align: center;
+      padding-left: 50px;
+      padding-bottom: 50px; }
+  .menu .cup {
+    border-radius: 50%;
+    width: 180px;
+    padding: 10px; }
