@@ -15,12 +15,17 @@
            border-radius: 10px;
        }
        a{
+           color: #c79c60;
+
         background-image: url('../imgs/tm-brown-button.png');
            background-repeat: no-repeat;
            display: flex;
            padding: 10px;
            padding-left: 40px;
            padding-bottom: 50px;
+           &:hover{
+               color: #fff;
+           }
        }
    }
    .map{
